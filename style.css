@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gudea:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Ubuntu Mono", monospace;
+}
+
+body.bodyDarkMode {
+    background-color: #1f1f1f;
+    color: white;
+
+}
+
+.bg-colors-div  {
+    background-color: rgb(236, 231, 231);
+}
+
+/* 
+.bg-colors-div.sectionDarkMode {
+    background-color: #1a1a1a;
+} */
+
+
+#nav-bar  {
+    padding: 1.5rem ;
+    font-weight: bold;
+    font-size: 0.5 rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+}
+
+
+#nav-bar.navDarkMode{
+    background-color: #1a1a1a;
+}
+
+
+#nav-bar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 3.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+
+#nav-bar a {
+    text-decoration: none;
+    color: rgb(116, 116, 116);
+
+}
+
+#nav-bar a:hover {
+color: black;
+color-scheme: black;
+
+}
+
+
+#nav-bar img {
+height: 30px;
+}
+
+#menu-icon, #x-icon {
+display: none;
+}
+
+.nav-show{
+display: none;
+}
+
+
+#side-bar {
+    font-size: 2rem;
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-100%);
+    transition: transform 0.9s ease;
+}    
+
+#side-bar.active {
+    transform: translateX(0);
+}
+
+
+#darkMode, #lightMode {
+    cursor: pointer;
+}
+
+
+#darkMode {
+    display: block;
+
+
+}
+
+#lightMode {
+    display: none;
+}
+
+#darkmode2, #lightMode2 {
+    cursor: pointer;
+}
+
+#darkMode2 {
+    display: block;
+
+
+}
+
+#lightMode2 {
+    display: none;
+}
+
+
+#hero {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80vh;
+}
+
+
+.hero p {
+    font-family: "Gudea", sans-serif;
+}
+
+.hero img {
+    height: 300px;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+.Info {
+    font-size: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+#Projects {
+    padding-top: 1.2rem ;
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+}
+
+.prj-main {
+    height: auto;
+}
+
+.prj-main h2 {    
+    text-align: center;
+    font-size: 2rem;
+    padding-top:  60px;
+    padding-bottom: 60px;  
+}
+
+.prj-main p {
+    font-family: "Gudea", sans-serif;
+}
+
+.content {
+    margin: 0;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 25px;
+    flex: 0 1 350px;
+}
+
+.card-left {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 80px; 
+
+}
+
+.card-left img {
+    -webkit-box-shadow: 14px 9px 12px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 14px 9px 12px -3px rgba(0,0,0,0.75);
+    box-shadow: 14px 9px 12px -3px rgba(0,0,0,0.75);
+    height: 300px;
+    width: 300px;
+    border-radius: 5px;
+    object-fit: cover; 
+    transition: .6s;
+}
+
+.card-left img:hover {
+    -webkit-box-shadow: 14px 9px 30px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 14px 9px 30px -3px rgba(0,0,0,0.75);
+    box-shadow: 14px 9px 30px -3px rgba(0,0,0,0.75);
+}
+
+.card-right {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    margin-bottom: 80px;
+}
+
+.card-right img {
+    -webkit-box-shadow: 14px 9px 12px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 14px 9px 12px -3px rgba(0,0,0,0.75);
+    box-shadow: 14px 9px 12px -3px rgba(0,0,0,0.75);
+    height: 300px;
+    width: 300px;
+    border-radius: 5px;
+    object-fit: cover;
+    transition: .6s;
+}
+
+.card-right img:hover {
+    -webkit-box-shadow: 14px 9px 30px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 14px 9px 30px -3px rgba(0,0,0,0.75);
+    box-shadow: 14px 9px 30px -3px rgba(0,0,0,0.75);
+}
+
+.Prj-4 {
+    margin-bottom: 0;
+    padding-bottom: 60px;
+}
+
+.mail-main {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+    .mail-main > div {
+    text-align: center;
+    font-size: 25px;
+}
+
+.mail-main h3 {
+    margin: 0;
+}
+
+.mail-main p {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.mail-main p, a {
+    font-family: "Gudea", sans-serif;
+}
+
+.btn {
+    background-color: rgb(236, 231, 231);
+    font-weight: bold;
+    padding: 13px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 50px ;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background-color: #928888;
+}
+
+#Footer {
+    height: auto;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+@media (max-width: 905px) {
+
+.card-left img, .card-right img {
+  width: 50vh;
+}
+
+.content {
+    text-align: left;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+}
+
+
+@media (max-width: 708px){
+.nav-hide  {
+ display: none;
+}
+
+.nav-show {
+display: block;
+
+}
+
+#menu-icon{
+display: block;
+}
+
+
+.controls {
+display: flex;
+justify-content: flex-start;
+width: 100%;
+cursor: pointer;
+z-index: 1;
+}
+
+#darkMode {
+    display: block;
+
+}
+
+
+#lightMode{
+    display: none;
+}
+
+
+
+
+
+}
+
+@media (max-width: 699px) {
+.hero {
+    flex-wrap: wrap;
+   }
+
+   .Info {
+    text-align: center;
+   }
+    
+
+.hero img {
+    height: 15rem;
+}
+
+.Info {
+    margin-top: -10rem;
+    font-size: 1.5rem;
+}
+
+.card-left img, .card-right img {
+  width: 100%;
+  object-fit: cover;
+    
+}
+
+.content {
+    text-align: left;
+    flex: 0 1 250px;
+  
+}
+
+}
+
+
+
